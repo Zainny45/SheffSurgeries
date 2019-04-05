@@ -9,7 +9,11 @@ String password
 String doctorOffice
 String phone
 String bio
-    
+
+static hasMany=[nurses:Nurse,appointments:Appointment,patients:Patient,prescriptions:Prescription]
+String toString(){
+return fullName
+}    
 
 
    static constraints = {

@@ -6,8 +6,15 @@ String patientAddress
 String patientResidence
 String patientId 
 Date   dateRegistered
-Number patientPhone
+String patientPhone
 Date dob
+
+String toString(){
+return patientName
+}
+
+static hasMany=[prescriptions:Prescription,doctors:Doctor]
+static belongsTo=[Doctor]
 
     static constraints = {
 patientName nullable: false, blank: false
