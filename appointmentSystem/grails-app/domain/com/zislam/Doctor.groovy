@@ -10,7 +10,13 @@ String doctorOffice
 String phone
 String bio
 
-static hasMany=[nurses:Nurse,appointments:Appointment,patients:Patient,prescriptions:Prescription]
+
+
+
+static hasMany=[prescriptions:Prescription,appointments:Appointment,nurses:Nurse,patients:Patient,surgeries:Surgery]
+static belongsTo=[Patient,Nurse,Appointment,Surgery,Prescription]
+
+
 String toString(){
 return fullName
 }    
@@ -25,6 +31,7 @@ password nullable: false, blank: false, password: true, unique: true, minSize: 8
 doctorOffice nullable: false, blank: false
 phone nullable: false, blank: false 
 bio nullable: false, blank: false, maxSize: 5000, widget: 'textarea'
+
 
     }
 }

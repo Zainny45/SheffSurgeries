@@ -6,13 +6,18 @@ String qualifications
 String nurseEmail
 String nurseOffice
 String nursePhone
+Surgery surgery
+
+static hasMany=[doctors:Doctor]
+static belongsTo=[Doctor]
+
+
+
+
 
 String toString(){
 return nurseName
 }
-static hasMany=[doctors:Doctor]
-static belongsTo=[Doctor]
-
 
 
     static constraints = {
@@ -21,5 +26,6 @@ qualifications nullable: false, blank: false
 nurseEmail nullable: false, blank: false, email: true
 nurseOffice nullable: false, blank: false
 nursePhone nullable: false, blank: false
+surgery nullable: false, blank: false
     }
 }

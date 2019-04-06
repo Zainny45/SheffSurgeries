@@ -4,10 +4,13 @@ class Prescription {
 String pharmacyName
 String prescripNumber
 String medicine
-Double totalCost
+String totalCost
 Date dateIssued
 Boolean patientPaying
 String daysofSupply
+
+static hasMany=[doctors:Doctor,patients:Patient]
+static belongsTo=[Doctor,Patient,Appointment]
 
 
 String toString(){
