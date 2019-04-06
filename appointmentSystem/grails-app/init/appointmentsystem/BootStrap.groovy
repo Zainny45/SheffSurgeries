@@ -9,7 +9,7 @@ class BootStrap {
 
 
 
-def SMCentre = new
+/*def SMCentre = new
 Surgery(
 name: 'Sheffield Medical Centre',
 address: '106 London Road, Sheffield',
@@ -179,14 +179,14 @@ patientPaying: 'true',
 daysofSupply: '2 weeks').save()
 
 
-App1.addToDoctors(CTatum)
+
 PCL.addToDoctors(CTatum)
 AMSurgery.addToDoctors(CTatum)
 BBirds.addToDoctors(CTatum)
 LJin.addToDoctors(CTatum)
 
 
-App2.addToDoctors(BPitt)
+
 CE.addToDoctors(BPitt)
 SMCentre.addToDoctors(BPitt)
 SPeters.addToDoctors(BPitt)
@@ -196,6 +196,8 @@ App2.addToSurgeries(AMSurgery)
 LJin.addToAppointments(App2)
 CE.addToPatients(LJin)
 
+App2.addToDoctors(BPitt)
+App1.addToDoctors(CTatum)*/
 
 
 
