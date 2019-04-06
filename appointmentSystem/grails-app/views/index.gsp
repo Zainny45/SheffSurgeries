@@ -1,77 +1,57 @@
 <!doctype html>
-<html>
-<head>
-    <meta name="layout" content="main"/>
-    <title>Welcome to Sheffild Surgeries | HomePage</title>
-</head>
-<body>
-<content tag="nav">
-    <li class="dropdown">
-        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Application Status <span class="caret"></span></a>
-        <ul class="dropdown-menu">
-            <li class="dropdown-item"><a href="#">Environment: ${grails.util.Environment.current.name}</a></li>
-            <li class="dropdown-item"><a href="#">App profile: ${grailsApplication.config.grails?.profile}</a></li>
-            <li class="dropdown-item"><a href="#">App version:
-                <g:meta name="info.app.version"/></a>
-            </li>
-            <li role="separator" class="dropdown-divider"></li>
-            <li class="dropdown-item"><a href="#">Grails version:
-                <g:meta name="info.app.grailsVersion"/></a>
-            </li>
-            <li class="dropdown-item"><a href="#">Groovy version: ${GroovySystem.getVersion()}</a></li>
-            <li class="dropdown-item"><a href="#">JVM version: ${System.getProperty('java.version')}</a></li>
-            <li role="separator" class="dropdown-divider"></li>
-            <li class="dropdown-item"><a href="#">Reloading active: ${grails.util.Environment.reloadingAgentEnabled}</a></li>
-        </ul>
-    </li>
-    <li class="dropdown">
-        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Artefacts <span class="caret"></span></a>
-        <ul class="dropdown-menu">
-            <li class="dropdown-item"><a href="#">Controllers: ${grailsApplication.controllerClasses.size()}</a></li>
-            <li class="dropdown-item"><a href="#">Domains: ${grailsApplication.domainClasses.size()}</a></li>
-            <li class="dropdown-item"><a href="#">Services: ${grailsApplication.serviceClasses.size()}</a></li>
-            <li class="dropdown-item"><a href="#">Tag Libraries: ${grailsApplication.tagLibClasses.size()}</a></li>
-        </ul>
-    </li>
-    <li class="dropdown">
-        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Installed Plugins <span class="caret"></span></a>
-        <ul class="dropdown-menu">
-            <g:each var="plugin" in="${applicationContext.getBean('pluginManager').allPlugins}">
-                <li class="dropdown-item"><a href="#">${plugin.name} - ${plugin.version}</a></li>
-            </g:each>
-        </ul>
-    </li>
-</content>
-
-<div class="svg" role="presentation">
-    <div class="grails-logo-container">
-        <asset:image src="grails-cupsonly-logo-white.svg" class="grails-logo"/>
-    </div>
-</div>
-
-<div id="content" role="main">
-    <section class="row colset-2-its">
-        <h1>Appointment System</h1>
-
-        <p>
-            Congratulations, you have successfully started your first Grails application! At the moment
-            this is the default page, feel free to modify it to either redirect to a controller or display
-            whatever content you may choose. Below is a list of controllers that are currently deployed in
-            this application, click on each to execute its default action:
-        </p>
-
-        <div id="controllers" role="navigation">
-            <h2>Available Controllers:</h2>
-            <ul>
-                <g:each var="c" in="${grailsApplication.controllerClasses.sort { it.fullName } }">
-                    <li class="controller">
-                        <g:link controller="${c.logicalPropertyName}">${c.fullName}</g:link>
-                    </li>
-                </g:each>
-            </ul>
+<html  lang="en" dir="ltr"> <!-- declares language of the webpage to assist search engines and browsers--> <!--class="no-js"--><!--dir="ltr" sets base direction as left to right for the html document-->
+  <head>
+    <meta charset="utf-8"> <!-- specifies characters the website is written in-->
+    <meta http-equiv="x-ua-compatible" content="ie=edge"> <!-- Choose which version of Internet Explorer the page should be rendered as. Edge mode tells Internet Explorer to display content in the highest mode available. -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--sets viewport, for the purpose of being able to view this page on various types of devices-->
+    <meta name="description" content=""> <!--meta description-->
+	<meta name="keywords" content=""> <!--meta key words-->
+    <meta name="author" content=""> <!--meta author name-->
+    <title>Home | Sheffield Surgeries</title>
+    <asset:stylesheet src="main1.css" />
+     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>  
+ </head>
+ 
+  <body>
+  
+ <header>
+        <div  class="container"><!---->
+            <div id ="branding">
+                <h1>Sheffield Surgeries</h1>
+            </div>
+            <div class="nav-login"><!--Login Part separate from the nav bar-->
+                <a href="loginpage.php">Sign In</a>
+                
+            </div>
+            
+            
         </div>
-    </section>
-</div>
+    </header>
 
-</body>
+  
+	
+	<!-- Main Content -->
+	
+	<section id="home-container">
+    <div class="widecontainer">
+     
+<div class="row">
+ <asset:image src="banner-gateway-medical-center.jpg" style="width%;"/>
+</div>  
+
+</div>
+    </section>
+
+
+    <!--Footer with copyright and links to some important pages-->
+    <footer>
+        
+        <p>Sheffield Surgeries, Copyright &copy; 2019</p>
+    </footer>
+   
+  </body>
 </html>
+
+
