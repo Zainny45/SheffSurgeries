@@ -21,8 +21,18 @@
 <h2>Receptionist Login</h2>
 
  <g:loginToggle />
+
+
  </div>
 
+<div class="row">
+ 
+<h3>Doctor Login</h3>
+
+ <g:doctorToggle />
+ </div>
+
+ 
 <g:layoutBody/>
 
 <div class="footer row" role="contentinfo">
