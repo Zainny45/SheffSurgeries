@@ -19,7 +19,7 @@
 <<<<<<< HEAD
  <div class="row">
  <asset:image src="surgery-banner.png"/>
-<h2>Receptionist Login</h2>
+
 
  <g:loginToggle />
 
@@ -28,7 +28,7 @@
 
 <div class="row">
  
-<h3>Doctor Login</h3>
+
 
  <g:doctorToggle />
  </div>
