@@ -1,5 +1,5 @@
 <!doctype html>
-<<<<<<< HEAD
+< HEAD
 <html>
 <head>
     <meta name="layout" content="main"/>
@@ -19,7 +19,7 @@
     
     </section>
 </div>
-=======
+
 <html  lang="en" dir="ltr"> <!-- declares language of the webpage to assist search engines and browsers--> <!--class="no-js"--><!--dir="ltr" sets base direction as left to right for the html document-->
   <head>
     <meta charset="utf-8"> <!-- specifies characters the website is written in-->
@@ -40,10 +40,10 @@
  <header>
         <div  class="container"><!---->
             <div id ="branding">
-                <h1>Sheffield Surgeries</h1>
+                <h1></h1>
             </div>
             <div class="nav-login"><!--Login Part separate from the nav bar-->
-                <a href="loginpage.php">Sign In</a>
+              
                 
             </div>
             
@@ -57,10 +57,7 @@
 	
 	<section id="home-container">
     <div class="widecontainer">
-     
-<div class="row">
- <asset:image src="banner-gateway-medical-center.jpg" style="width%;"/>
-</div>  
+
 
 </div>
     </section>
@@ -69,11 +66,11 @@
     <!--Footer with copyright and links to some important pages-->
     <footer>
         
-        <p>Sheffield Surgeries, Copyright &copy; 2019</p>
+     
     </footer>
    
   </body>
 </html>
 
->>>>>>> origin
+
 
