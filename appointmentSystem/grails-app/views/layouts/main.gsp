@@ -16,6 +16,7 @@
 
 <body>
 
+<<<<<<< HEAD
  <div class="row">
  <asset:image src="surgery-banner.png"/>
 <h2>Receptionist Login</h2>
@@ -62,6 +63,11 @@
     </div>
 </div>
 
+=======
+<div class="row">
+ <asset:image src="banner-gateway-medical-center.jpg"/>
+ </div>
+>>>>>>> origin
 
 <div id="spinner" class="spinner" style="display:none;">
     <g:message code="spinner.alt" default="Loading&hellip;"/>
